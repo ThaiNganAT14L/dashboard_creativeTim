@@ -1,0 +1,88 @@
+main{
+    .db-row-1{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: $pd-3;
+        padding-bottom: $pd-3;
+        article{
+            background-color: white;
+            border: 1px solid $color-gray-2;
+            border-radius: $border-radius-2;
+            main{
+                padding: 0px;
+                justify-content: space-between;
+                padding: 15px;
+                i{
+                    margin-left: 30px;
+                    font-size: 3em;
+                }
+                .content_art{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    .tittle_content_art{
+                        font-size: 20px;
+                        font-weight: 400px;
+                    }
+                    .content_data{
+                        font-size: 30px;
+                        font-weight: 100;
+                    }
+                }
+                .fa-database{
+                    color: $color-orange-server;
+                }
+                .fa-wallet{
+                    color: $color-green-article;
+                }
+                .fa-chart-line{
+                    color: $color-red-grap;
+                }
+                .fa-twitter{
+                    color: $color-blue-twitter;
+                }
+            }
+        }
+        footer{
+            padding: $pd-1;
+            .time_art{
+                border-top: 1px solid $color-gray-2;
+                padding: $pd-1;
+                color: #aaaaaa;
+                i{
+                    color: #aaaaaa;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    main{
+        .db-row-1{
+            grid-template-columns: auto auto;
+            grid-column-gap: $pd-3;
+        }
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    main{
+        .db-row-1{
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: $pd-3;
+            article{
+                main{
+                    margin: 0px;   
+                    padding: 10px 15px;
+                    i{
+                        margin: 0px;
+                    }
+                }
+                footer{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.table{
+    .background_white{
+        background-color: white;
+        margin-bottom: 100px;
+        padding: 20px;
+        border: 1px solid $color-gray-3;
+        border-radius: 5px;
+        
+    }
+    .background_gray{
+        padding: 20px;  
+    }
+    .header_name{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        span{
+            display: block;
+            font-weight: 100;
+            color: $color-gray-3;
+        }
+    }
+    table{
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+        padding: 0px 20px;
+        thead{
+            text-align: left;
+        }
+        tbody{
+            tr{
+                border-top: 1px solid $color-gray-3;
+                &:hover{
+                    background-color: $color-gray-4;
+                }
+            }
+            .bg_gray{
+                background-color: $color-gray-3;
+            }
+        }
+        tr{
+            height: 50px;
+            
+        }
+        td:first-child, th:first-child{
+            padding-left: 15px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.f_row_center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-nav-header{
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    bottom: -125px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.icon-bar-active{
+    transform: translateX(-280px);
+    position: fixed;
+    z-index: 10px;
+    top: 10px;
+}
+
+.sidebar-active{
+    transform: translateX(0);
+}
+
+.d_block{
+    display: block !important;
+}

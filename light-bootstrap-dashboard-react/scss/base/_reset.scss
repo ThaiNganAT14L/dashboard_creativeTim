@@ -1,0 +1,42 @@
+// mac dinh
+
+*{
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    &::after, &::before{
+        box-sizing: border-box;
+    }
+}
+
+body{
+    background-color: $color-bg;
+}
+
+aside{
+    *{
+        font-weight: 400px;
+        color: $color-gray-3;
+        text-transform: uppercase;
+    }
+}
+
+header{
+    *{
+        color: $color-gray-2;
+    }
+}
+
+main{
+    padding: $pd-3;
+}
+
+@media only screen and (min-width: 991px){
+    header, main, footer{
+        margin-left: $mg-sidebar;
+    }
+}

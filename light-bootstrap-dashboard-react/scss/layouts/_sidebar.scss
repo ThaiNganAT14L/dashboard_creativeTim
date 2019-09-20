@@ -1,0 +1,91 @@
+
+aside{
+    position: fixed;
+    right: 0px;
+    background-color: black;
+    height: 100vh;
+    width: 250px;
+    padding: 0 $pd-1;
+    overflow: auto;
+    transform: translateX(100%);
+    z-index: 10;
+    .brand{
+        padding: $pd-0 $pd-1;
+        border-bottom: 1px solid $color-gray-4;
+        margin-bottom: $mg-1;
+        img{
+            width: 50px;
+        }
+        .head_Name{
+            font-size: 25px;
+        }
+    }
+    .menu_nav{
+        padding: 0 $pd-1;
+        .list_nav, .list_nav_none-sm{
+            padding: 0;
+            .nav_item{
+                border-radius: $border-radius-2;
+                padding: 0  $pd-0;
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: $pd-1 0;
+                    .icons_nav{
+                        font-size: 1.5em;
+                        margin-right: $mg-1;
+                        min-width: 30px;
+                    }
+                    .fa-angle-down{
+                        padding: 0 $pd-0;
+                    }
+                }
+                ul{
+                    display: none;
+                    padding-left: 0px;
+                    li{
+                        font-weight: 100px;
+                        line-height: 1.5em;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .dropdown_nav_item:active,.dropdown_nav_item:focus{
+                ul{
+                    display: flex;
+                }
+            }
+            .nav_item_active{
+                background:$color_bg;
+            }
+        }
+        .list_nav{
+            .nav_item:last-child{
+                border: 2px solid $color-gray-2;
+                padding: $pd-0 $pd-2;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 991px){
+    aside{
+        transform: translateX(0%);
+        left: 0;
+        .list_nav_none-sm{
+            display: none;
+        }
+        .list_nav{
+            li{
+                margin: 15px 0;
+            }
+            .nav_item:last-child{
+                position: absolute;
+                bottom: 15px;
+                border: 2px solid $color-gray-2;
+                padding: $pd-0 $pd-2;
+            }
+        }   
+    }
+}

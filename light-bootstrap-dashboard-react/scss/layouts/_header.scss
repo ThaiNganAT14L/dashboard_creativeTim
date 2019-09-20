@@ -1,0 +1,90 @@
+header{
+    justify-content: space-between;
+    height: 50px;
+    background-color: white;
+    padding: 0 15px;
+    .header_name{
+        font-size: 25px;
+        min-width: 150px;
+    }
+    .icons_sidebar{
+        justify-content: space-between;
+        .fa-bars{
+            display: block;
+            font-size: 25px;
+        }
+        .icon_nav_main{
+            display: none;
+            i{
+                font-size: 25px;
+                margin-left: 20px;
+            }
+            .notifications_main{
+                position: relative;
+                align-items: flex-end;
+                .fa-angle-down{
+                    margin-left: 0px;
+                    font-size: small;
+                }
+                span{
+                    font-size: small;
+                    width: 15px;
+                    background-color: red;
+                    text-align: center;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 15px;
+                    top: -5px;
+                    color: white;
+                }
+                ul{
+                    display: none;  
+                }
+            }
+            a:focus{
+                i{
+                    color: $color-blue;
+                }
+            }
+        }
+        .nav_tittle{
+            display: none;
+            a, div{
+                margin-right: 20px;
+            }
+            .droppdown_home{
+                position: relative;
+                align-items: flex-end;
+                .fa-angle-down{
+                    padding-left: 0px;
+                    font-size: small;
+                }
+                ul{
+                    display: none;
+                    bottom: -150px;
+                }
+            }
+            a:focus{
+                color: $color-blue;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 991px){
+    header{
+        .icons_sidebar{
+            width: 100%;
+            .fa-bars{
+                display: none;
+            }
+            .icon_nav_main{
+                display: flex;
+            }
+            .nav_tittle{
+                display: flex;
+            }
+        }   
+    }
+}

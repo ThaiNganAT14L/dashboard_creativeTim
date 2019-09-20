@@ -1,0 +1,33 @@
+.footer_end{
+    background-color: white;
+    font-weight: bold;
+    padding:10px;
+    ul{
+        li{
+            margin: 20px;
+            a{
+                color: #aaaaaa;
+            }
+        }
+    }
+    p{
+        text-align: center;
+        a{
+            color: aqua;    
+        }
+    }
+}
+
+@media only screen and (min-width: 991px){
+    .footer_end{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}

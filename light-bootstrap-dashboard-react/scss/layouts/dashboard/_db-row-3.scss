@@ -1,0 +1,111 @@
+main{
+    .db-row-3{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: $pd-3;
+        border-bottom: $pd-3;
+        .char{
+            border: 1px solid $color-gray-2;
+            border-radius: $border-radius-2;
+            padding: $pd-1;
+            background-color: white;
+            h1{
+                margin: 0px;
+                font-size: 3em;
+                font-weight: normal;
+            }
+            .time_perfirmance{
+                color: $color-gray-2;
+                font-weight: 100;
+            }
+            canvas{
+                padding: $pd-1 0;
+            }
+            .footer_time{
+                padding: $pd-1;
+                border-top: 1px solid $color-gray-2;
+                i{
+                    color: $color-gray-2;
+                }
+                color: $color-gray-2;
+            }
+            .canvas{
+                position: relative;
+                width: calc(100vw - 60px - 20px);
+            }
+        }
+        .tasks{
+            .header_behavior{
+                padding-bottom: 10px;
+                border-bottom: 1px solid $color-gray-3;
+                .add_task{
+                    width: 100%;
+                    text-align: center;
+                    input{
+                        width: 70%;
+                        box-sizing: border-box;
+                        border: 1px solid $color-gray-2;
+                    }
+                    button{
+                        width: 9%;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+            .task_canvas{
+                height: 300px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                article{
+                    width: calc(100% - 20px);
+                    justify-content: space-between;
+                    padding: 10px;
+                    border-bottom: 1px solid $color-gray-3;
+                    .left_task{
+                        align-items: flex-start;
+                        input{
+                            margin-top: 5px;
+                            margin-right: 5px;
+                        }
+                        input:checked + p{
+                            text-decoration: line-through;  
+                        }
+                        p{
+                            width: calc(100% - 20px);
+                        }
+                    }
+                    .icons_task{
+                        .fa-trash-alt:hover{
+                            color: red;
+                        }
+                        .fa-edit:hover{
+                            color: rebeccapurple;
+                        }
+                    }
+                }
+            }
+            .footer_time{
+                border-top: 1px solid gray;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 991px){
+    main{
+        .db-row-3{
+            grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+            grid-column-gap: $pd-3;
+            .sales{
+                .canvas{
+                    width: 90%;
+                }
+            }
+            .task_canvas{
+                .add_task{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

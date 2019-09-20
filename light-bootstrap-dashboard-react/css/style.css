@@ -1,0 +1,313 @@
+* {
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  text-transform: none;
+  color: black; }
+  *::after, *::before {
+    box-sizing: border-box; }
+
+body {
+  margin: 0px; }
+
+.hr_gray {
+  border-bottom: 0.5px solid gray; }
+
+.around_line {
+  border: 1px solid #999; }
+
+.sidebar {
+  position: fixed;
+  right: 0px;
+  background-color: black;
+  height: 100vh;
+  width: 250px;
+  padding: 0 10px;
+  transform: translateX(100%); }
+  .sidebar * {
+    font-weight: 400px;
+    color: white;
+    text-transform: uppercase; }
+  .sidebar .brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 10px; }
+    .sidebar .brand img {
+      width: 50px; }
+    .sidebar .brand .head_Name {
+      font-size: 25px; }
+  .sidebar .menu_nav {
+    padding: 0 10px; }
+    .sidebar .menu_nav .list_nav {
+      padding: 0 0px; }
+      .sidebar .menu_nav .list_nav .nav_item {
+        border-radius: 5px;
+        padding: 0 5px; }
+        .sidebar .menu_nav .list_nav .nav_item a {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10px 0; }
+          .sidebar .menu_nav .list_nav .nav_item a .icons_nav {
+            font-size: 1.5em;
+            margin-right: 10px;
+            min-width: 30px; }
+          .sidebar .menu_nav .list_nav .nav_item a .fa-angle-down {
+            padding: 0 5px; }
+        .sidebar .menu_nav .list_nav .nav_item ul {
+          display: none;
+          padding-left: 0px; }
+          .sidebar .menu_nav .list_nav .nav_item ul li {
+            font-weight: 100px;
+            line-height: 1.5em;
+            text-transform: capitalize; }
+      .sidebar .menu_nav .list_nav .nav_item_active {
+        background: #999; }
+
+main {
+  background-color: #dddddd40; }
+
+.head_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+  padding: 0 15px; }
+  .head_main .head_nav_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .head_main .head_nav_main .head_main_name {
+      font-size: 25px; }
+    .head_main .head_nav_main .icon_nav_main {
+      display: none; }
+      .head_main .head_nav_main .icon_nav_main i {
+        font-size: 25px;
+        padding-left: 50px; }
+  .head_main .icons_sidebar i {
+    font-size: 25px; }
+  .head_main .icons_sidebar .nav_tittle {
+    display: none; }
+
+.f_row_center {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.main_main {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 20px;
+  grid-row-gap: 10px; }
+  .main_main article {
+    border-radius: 5px;
+    border: 1px solid; }
+    .main_main article main {
+      background-color: white;
+      justify-content: space-between;
+      padding: 10px; }
+      .main_main article main .content_art {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
+        .main_main article main .content_art .tittle_content_art {
+          font-size: 20px;
+          font-weight: 400px; }
+        .main_main article main .content_art .content_data {
+          font-size: 30px;
+          font-weight: 100; }
+      .main_main article main i {
+        margin-left: 30px;
+        font-size: 3em; }
+      .main_main article main .fa-database {
+        color: orange; }
+      .main_main article main .fa-wallet {
+        color: green; }
+      .main_main article main .fa-chart-line {
+        color: red; }
+      .main_main article main .fa-twitter {
+        color: aqua; }
+    .main_main article footer .time_art {
+      padding: 10px;
+      color: #aaaaaa; }
+      .main_main article footer .time_art i {
+        color: #aaaaaa; }
+
+.char_js {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 10px; }
+
+.char {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white; }
+  .char h1 {
+    margin: 0px;
+    font-size: 3em;
+    font-weight: normal; }
+  .char .time_perfirmance {
+    color: #aaaaaa;
+    font-weight: 100; }
+  .char canvas {
+    padding: 10px 0; }
+  .char .footer_time {
+    color: #aaa; }
+    .char .footer_time i {
+      padding: 10px;
+      color: #aaaaaa; }
+  .char .canavas {
+    position: relative;
+    width: 90vw; }
+
+.footer_end {
+  font-weight: bold; }
+  .footer_end ul li {
+    margin: 20px; }
+    .footer_end ul li a {
+      color: #aaaaaa; }
+  .footer_end p {
+    text-align: center; }
+    .footer_end p a {
+      color: aqua; }
+
+.bg_white {
+  background-color: white; }
+
+section {
+  padding: 20px; }
+
+.task_canvas article {
+  justify-content: space-between;
+  padding-right: 10px; }
+
+.char_js2 {
+  grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: auto; }
+  .char_js2 .add_task {
+    width: 100%;
+    text-align: center; }
+    .char_js2 .add_task input {
+      width: 70%;
+      box-sizing: border-box; }
+    .char_js2 .add_task button {
+      width: 9%;
+      box-sizing: border-box; }
+  .char_js2 .tasks .task_canvas {
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .char_js2 .tasks .footer_time {
+    border-top: 1px solid gray; }
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+  .main_main {
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px; } }
+@media only screen and (min-width: 1000px) {
+  .main_main {
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px; }
+    .main_main article main, .main_main article footer {
+      margin-left: 0; }
+
+  .char_js {
+    grid-template-columns: 65% 32%;
+    grid-column-gap: 35px; }
+
+  .char .canavas {
+    width: 45vw; }
+
+  .email_statistics .canavas {
+    width: 20vw; }
+
+  .user_behavior .canavas {
+    width: 45vw; }
+
+  .char_js2 {
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px; }
+    .char_js2 .task_canvas article .icons_task {
+      display: flex;
+      flex-direction: row; }
+
+  .sidebar {
+    transform: translateX(0);
+    left: 0; }
+    .sidebar .list_nav .nav_item:nth-child(1), .sidebar .list_nav .nav_item:nth-child(2), .sidebar .list_nav .nav_item:nth-child(3), .sidebar .list_nav .nav_item:nth-child(4), .sidebar .list_nav .nav_item:nth-child(5), .sidebar .list_nav .nav_item:nth-child(6) {
+      display: none; }
+    .sidebar .list_nav .nav_item:last-child {
+      position: absolute;
+      bottom: 10px; }
+
+  body main {
+    margin-left: 270px; }
+
+  body footer {
+    margin-left: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    body footer ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+
+  .head_main .icon_nav_main {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center; }
+    .head_main .icon_nav_main .notifications_main {
+      position: relative; }
+      .head_main .icon_nav_main .notifications_main .fa-globe {
+        position: relative; }
+        .head_main .icon_nav_main .notifications_main .fa-globe::after {
+          content: '5';
+          background-color: red;
+          font-size: 15px;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0px;
+          right: 1px; }
+      .head_main .icon_nav_main .notifications_main .fa-angle-down {
+        padding-left: 0;
+        font-size: 15px; }
+      .head_main .icon_nav_main .notifications_main ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        padding-left: 0px;
+        top: 15px;
+        padding: 5px;
+        width: 150px; }
+        .head_main .icon_nav_main .notifications_main ul li {
+          margin: 5px;
+          text-align: left; }
+  .head_main .icons_sidebar .fa-bars {
+    display: none; }
+  .head_main .icons_sidebar .nav_tittle {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .head_main .icons_sidebar .nav_tittle div {
+      padding-left: 50px; }
+    .head_main .icons_sidebar .nav_tittle .droppdown_home ul {
+      position: absolute;
+      top: 15px;
+      background-color: white;
+      padding-left: 0px;
+      padding: 10px;
+      display: none; }
+      .head_main .icons_sidebar .nav_tittle .droppdown_home ul li {
+        margin: 5px; } }
+@media only screen and (min-width: 1000px) and (min-width: 1200px) {
+  .main_main {
+    grid-template-columns: auto auto auto auto; } }
+
+/*# sourceMappingURL=style.css.map */

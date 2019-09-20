@@ -1,0 +1,122 @@
+.typography{
+    .tittle_typo{
+        background-color: white;
+        padding: 20px;
+        .header_name_typo{
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+            span{
+                display: block;
+                font-weight: 100;
+                color: $color-gray-4;
+            }
+        }
+        .card_typo{
+            display: grid;
+            grid-template-columns: auto;
+            grid-row-gap: 30px;
+            .row{
+                .col1{
+                    color: $color-gray-4;
+                }
+            }
+            .header1{
+                .col2{
+                    font-size: 2.5rem;
+                }
+            }
+            .header2{
+                .col2{
+                    font-size: 2.2rem;
+                }
+            }
+            .header3{
+                .col2{
+                    font-size: 1.9rem;
+                }
+            }
+            .header4{
+                .col2{
+                    font-size: 1.6rem;
+                }
+            }
+            .header5{
+                .col2{
+                    font-size: 1.3rem;
+                }
+            }
+            .header6{
+                .col2{
+                    font-size: 1rem;
+                }
+            }
+            .quote{
+                .col2{
+                    border-left: 5px solid $color-gray-4;
+                    padding: 20px;
+                    span{
+                        display: block;
+                        margin-top: 10px;
+                        font-size: 0.8em;
+                        color: $color-gray-4;
+                    }
+                }
+            }
+            .muted_text{
+                .col2{
+                    color: $color-gray-3;
+                }
+            }
+            .coloured_text{
+                .col2{
+                    span{
+                        display: block;
+                    }
+                    .color_red{
+                        color: red;
+                    }
+                    .color_blue{
+                        color: blue;
+                    }
+                    .color_aqua{
+                        color: aqua;
+                    }
+                    .color_yellow{
+                        color: yellow;
+                    }
+                    .color_orange{
+                        color: orange;
+                    }
+                }
+            }
+            .small_tag{
+                .col2{
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                    .smaller-tag{
+                        display: block;
+                        color: $color-gray-3;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:991px){
+    .typography{
+        .tittle_typo{
+            .card_typo{
+                grid-row-gap: 50px;
+                .row{
+                    display: grid;
+                    grid-template-columns: 120px auto;
+                    grid-column-gap: 30px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
